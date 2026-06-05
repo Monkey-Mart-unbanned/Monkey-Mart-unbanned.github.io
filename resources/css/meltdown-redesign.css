@@ -1,0 +1,464 @@
+:root {
+    --dark: #14532d;
+    --gray: #6b7280;
+    --green: #22c55e;
+    --green-deep: #16a34a;
+    --green-light: #dcfce7;
+    --green-mint: #bbf7d0;
+    --yellow: #facc15;
+    --yellow-deep: #eab308;
+    --orange: #f97316;
+    --orange-deep: #ea580c;
+    --red: #ef4444;
+    --red-deep: #dc2626;
+    --blue: #06b6d4;
+    --blue-deep: #0891b2;
+    --pink: #f472b6;
+    --white: #ffffff;
+    --black: #0f1a14;
+    --paper: #ffffff;
+    --panel: #f0fdf4;
+    --line: rgba(34, 197, 94, .22);
+    --text: #14532d;
+    --muted: #4b7c5a;
+    --shadow: 0 22px 54px rgba(20, 83, 45, .18);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+.dark,
+.dark body,
+.dark .dark\:bg-gray-950,
+.dark .dark\:bg-gray-900 {
+    background:
+        radial-gradient(circle, rgba(34, 197, 94, .12) 0 4px, transparent 5px) 0 0 / 28px 28px,
+        linear-gradient(180deg, #f0fdf4 0%, #dcfce7 60%, #bbf7d0 100%) !important;
+    color: var(--text);
+}
+
+.min-h-screen {
+    background: transparent !important;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.font-heading,
+.player-footer__left h1,
+.page-content h2,
+.page-content h3,
+.categoryHead h1,
+.layout-left h1,
+.title-game span,
+.g-footer__button-title_text {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+header {
+    background: linear-gradient(180deg, var(--green), var(--green-deep)) !important;
+    border-bottom: 4px solid var(--yellow) !important;
+    box-shadow: 0 14px 34px rgba(20, 83, 45, .28);
+}
+
+header .container {
+    min-height: 62px;
+}
+
+header img {
+    transform-origin: center;
+    filter: drop-shadow(0 3px 0 rgba(20, 83, 45, .36));
+}
+
+header a.flex.items-center img,
+header img[alt="Bitlife Unblocked"] {
+    width: auto !important;
+    height: 54px !important;
+    max-height: 54px !important;
+    max-width: min(220px, 38vw) !important;
+    object-fit: contain !important;
+}
+
+header a.flex.items-center > div {
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+}
+
+.input_search {
+    height: 36px !important;
+    background: var(--paper) !important;
+    border: 2px solid rgba(34, 197, 94, .35) !important;
+    border-radius: 6px !important;
+    color: var(--green-deep) !important;
+    padding-left: 46px !important;
+    box-shadow: inset 0 2px 0 rgba(34, 197, 94, .08), 0 3px 0 rgba(20, 83, 45, .2);
+}
+
+.input_search::placeholder {
+    color: var(--muted);
+}
+
+.input_search:focus {
+    border-color: var(--green) !important;
+    box-shadow: 0 0 0 4px rgba(250, 204, 21, .44), inset 0 2px 0 rgba(34, 197, 94, .08) !important;
+    outline: 0;
+}
+
+#search_button,
+.text-\[\#22c55e\]\/70 {
+    color: var(--green) !important;
+}
+
+#search_button {
+    left: 7px !important;
+    width: 32px !important;
+    height: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 5px;
+    overflow: visible !important;
+    line-height: 1 !important;
+}
+
+#search_button .svg-icon,
+#search_button svg {
+    width: 22px !important;
+    height: 22px !important;
+    min-width: 22px !important;
+    min-height: 22px !important;
+    overflow: visible !important;
+    display: block !important;
+}
+
+.search__result_container {
+    background: rgba(255, 255, 255, .98) !important;
+    border: 2px solid var(--green) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 18px 38px rgba(20, 83, 45, .2), 0 4px 0 rgba(250, 204, 21, .45) !important;
+}
+
+.link_search_complete:hover {
+    background: rgba(34, 197, 94, .12);
+}
+
+.relative.overflow-hidden.rounded-2xl {
+    border: 5px solid var(--green) !important;
+    border-radius: 10px !important;
+    background: linear-gradient(180deg, #ffffff, #f0fdf4) !important;
+    box-shadow: 0 0 0 3px rgba(250, 204, 21, .88), 0 24px 56px rgba(20, 83, 45, .28) !important;
+}
+
+.frame-box-game iframe {
+    border: 0;
+    border-radius: 4px;
+    background: #ffffff;
+}
+
+.player-footer {
+    margin-top: 12px;
+    background: linear-gradient(180deg, var(--green), var(--green-deep)) !important;
+    border: 3px solid var(--yellow);
+    border-radius: 8px !important;
+    box-shadow: 0 8px 0 rgba(20, 83, 45, .4), 0 18px 36px rgba(20, 83, 45, .22);
+}
+
+.player-footer__left img {
+    background: #fff;
+    border: 2px solid var(--yellow);
+    border-radius: 5px !important;
+    box-shadow: 0 3px 0 rgba(20, 83, 45, .42);
+}
+
+.player-footer__left h1 {
+    color: var(--yellow) !important;
+    text-shadow: 0 3px 0 rgba(20, 83, 45, .64);
+}
+
+.g-footer__button {
+    min-width: 44px;
+    min-height: 42px;
+    border: 2px solid rgba(255, 255, 255, .72) !important;
+    border-radius: 8px !important;
+    background: linear-gradient(180deg, #4ade80, var(--green)) !important;
+    color: #ffffff !important;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, .28), 0 5px 0 var(--green-deep), 0 12px 22px rgba(20, 83, 45, .24);
+    transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease, filter .16s ease !important;
+}
+
+.g-footer__button:hover,
+.g-footer__button.active,
+.g-footer__button.voted {
+    border-color: var(--yellow) !important;
+    background: linear-gradient(180deg, #fde047, var(--yellow)) !important;
+    color: #14532d !important;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, .32), 0 5px 0 var(--yellow-deep), 0 15px 26px rgba(234, 179, 8, .28);
+    transform: translateY(-1px);
+}
+
+.g-footer__button:active {
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, .16), 0 2px 0 var(--yellow-deep), 0 8px 16px rgba(234, 179, 8, .24);
+    transform: translateY(3px) scale(.99);
+}
+
+.g-footer__button .svg-icon {
+    color: #ffffff;
+    filter: drop-shadow(0 1px 0 rgba(20, 83, 45, .42));
+}
+
+.g-footer__button:hover .svg-icon,
+.g-footer__button.active .svg-icon {
+    color: #14532d;
+    filter: drop-shadow(0 1px 0 rgba(255, 255, 255, .42));
+}
+
+.favorites_btn.favorited {
+    background: linear-gradient(180deg, #fca5a5, var(--red)) !important;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, .24), 0 5px 0 var(--red-deep), 0 12px 22px rgba(239, 68, 68, .24);
+}
+
+.content-inner,
+.thumb-card,
+.page-description {
+    background: linear-gradient(180deg, #ffffff, #f0fdf4) !important;
+    border: 2px solid rgba(34, 197, 94, .22) !important;
+    border-radius: 8px !important;
+    box-shadow: var(--shadow) !important;
+}
+
+.content-inner {
+    position: relative;
+}
+
+.content-inner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 8px;
+    pointer-events: none;
+    border-radius: 8px 8px 0 0;
+    background: linear-gradient(90deg, var(--green) 0 20%, var(--yellow) 20% 40%, var(--orange) 40% 60%, var(--pink) 60% 80%, var(--blue) 80% 100%);
+}
+
+.game-description,
+.content-inner > * {
+    position: relative;
+}
+
+.page-content {
+    color: var(--text) !important;
+    line-height: 1.7;
+}
+
+.page-content p,
+.page-content li,
+.description__body {
+    color: var(--text) !important;
+}
+
+.page-content h2,
+.categoryHead h1,
+.layout-left h1,
+.description__body h1 {
+    color: var(--green-deep) !important;
+    text-shadow: 0 2px 0 var(--yellow), 0 4px 0 rgba(20, 83, 45, .1);
+}
+
+.page-content h3 {
+    color: var(--orange-deep) !important;
+    text-shadow: 0 2px 0 rgba(250, 204, 21, .55);
+}
+
+.page-content h2 {
+    margin-top: 30px;
+    font-size: clamp(25px, 2.8vw, 36px);
+}
+
+.page-content h3 {
+    margin-top: 24px;
+    font-size: clamp(19px, 2vw, 24px);
+}
+
+.page-content strong {
+    color: inherit;
+}
+
+.page-content a {
+    color: var(--green-deep) !important;
+}
+
+.page-content img {
+    background: #ffffff;
+    border: 5px solid var(--green);
+    border-radius: 8px;
+    box-shadow: 0 0 0 3px var(--yellow), 0 22px 42px rgba(20, 83, 45, .22);
+}
+
+.seo-image {
+    margin: 28px auto 34px;
+    max-width: 360px;
+    text-align: center;
+}
+
+.seo-image--wide {
+    max-width: 460px;
+}
+
+.seo-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 560px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.seo-image figcaption {
+    margin-top: 10px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.divider {
+    background: linear-gradient(90deg, var(--green) 0 20%, var(--yellow) 20% 40%, var(--orange) 40% 60%, var(--pink) 60% 80%, var(--blue) 80% 100%) !important;
+    box-shadow: 0 3px 0 rgba(20, 83, 45, .2);
+}
+
+.thumb-card {
+    overflow: hidden;
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease !important;
+}
+
+.thumb-card:hover {
+    border-color: var(--green) !important;
+    box-shadow: 0 18px 38px rgba(20, 83, 45, .22), 0 0 0 3px rgba(250, 204, 21, .72) !important;
+    transform: translateY(-3px) !important;
+}
+
+.title-game span,
+.text-\[\#22c55e\],
+.group:hover .group-hover\:text-\[\#16a34a\],
+.text_color,
+.text_search_complete {
+    color: var(--green-deep) !important;
+}
+
+.btn_up {
+    background: linear-gradient(180deg, var(--green), var(--green-deep)) !important;
+    color: var(--yellow);
+    border: 2px solid var(--yellow) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 5px 0 rgba(20, 83, 45, .5), 0 16px 28px rgba(20, 83, 45, .24);
+}
+
+.blur_dialog {
+    background: rgba(15, 26, 20, .6) !important;
+    backdrop-filter: blur(7px);
+}
+
+.popup-heading,
+.popup-content,
+.popup-link_share {
+    background: #ffffff !important;
+    border-color: var(--green) !important;
+    color: var(--text) !important;
+}
+
+.popup-link-share--url {
+    color: var(--green-deep) !important;
+}
+
+.popup-link-share--copy {
+    background: var(--green) !important;
+    color: #ffffff !important;
+}
+
+footer {
+    background: linear-gradient(180deg, var(--green), var(--green-deep)) !important;
+    border-top: 4px solid var(--yellow);
+}
+
+.footer-legal {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.footer-legal a {
+    color: #ffffff;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    transition: color .18s ease, border-color .18s ease;
+}
+
+.footer-legal a:hover,
+.footer-legal a:focus {
+    color: var(--yellow);
+    border-color: var(--yellow);
+    outline: 0;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        gap: 10px;
+        min-height: 72px;
+        padding: 8px 12px;
+    }
+
+    header a.flex.items-center img,
+    header img[alt="Bitlife Unblocked"] {
+        height: 50px !important;
+        max-height: 50px !important;
+        max-width: 180px !important;
+    }
+
+    .search-results {
+        max-width: 100% !important;
+    }
+
+    .relative.overflow-hidden.rounded-2xl {
+        border-width: 3px !important;
+    }
+
+    .player-footer__actions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .g-footer__button {
+        min-width: 48px;
+    }
+
+    .content-inner {
+        padding: 18px !important;
+    }
+
+    .seo-image {
+        max-width: min(320px, 88vw);
+    }
+
+    .seo-image--wide {
+        max-width: min(360px, 88vw);
+    }
+
+    .seo-image img {
+        max-height: 500px;
+    }
+}
+
+@media (max-width: 460px) {
+    header a.flex.items-center img,
+    header img[alt="Bitlife Unblocked"] {
+        height: 42px !important;
+        max-height: 42px !important;
+        max-width: 145px !important;
+    }
+}

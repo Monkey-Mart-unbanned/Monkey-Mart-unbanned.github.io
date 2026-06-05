@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Monkey Mart",
+        "slug": "monkey-mart",
+        "image": "/data/image/game/monkey-mart-b.png"
+    },
+    {
+        "name": "Bunny Market",
+        "slug": "bunny-market",
+        "image": "/data/image/game/bunny-market.png"
+    }
+]

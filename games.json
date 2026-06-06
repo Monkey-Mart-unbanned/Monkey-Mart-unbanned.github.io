@@ -2,11 +2,26 @@
     {
         "name": "Monkey Mart",
         "slug": "monkey-mart",
-        "image": "/data/image/game/monkey-mart-b.png"
+        "image": "/data/image/game/monkey-mart-b.webp"
     },
     {
         "name": "Bunny Market",
         "slug": "bunny-market",
-        "image": "/data/image/game/bunny-market.png"
+        "image": "/data/image/game/bunny-market.webp"
+    },
+    {
+        "name": "Mini Monkey Mart",
+        "slug": "mini-monkey-mart",
+        "image": "/data/image/game/mini-monkey-mart.webp"
+    },
+    {
+        "name": "RoomDeco",
+        "slug": "room-deco",
+        "image": "/data/image/game/room-deco.webp"
+    },
+    {
+        "name": "Game of Farmers",
+        "slug": "game-of-farmers",
+        "image": "/data/image/game/game-of-farmers.webp"
     }
 ]
